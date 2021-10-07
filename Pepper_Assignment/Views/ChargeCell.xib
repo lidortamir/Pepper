@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19115.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.5"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChargeCell" rowHeight="60" id="KGk-i7-Jjw" customClass="ChargeCell" customModule="Pepper_Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label da df" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D19-Uf-jfr">
+                        <rect key="frame" x="16" y="19.5" width="85.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label dafd afd afd fda fdaf adf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keh-rZ-CDp">
+                        <rect key="frame" x="117.5" y="17" width="156.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yr2-I4-ceh">
+                        <rect key="frame" x="279" y="15.5" width="25" height="24"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="EIr-CH-x0V"/>
+                            <constraint firstAttribute="width" secondItem="Yr2-I4-ceh" secondAttribute="height" id="U9y-d4-DRk"/>
+                        </constraints>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal">
+                            <imageReference key="backgroundImage" image="info.circle.fill" catalog="system"/>
+                        </state>
+                        <connections>
+                            <action selector="clickInfo:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3Jf-9Q-Pq2"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="keh-rZ-CDp" firstAttribute="centerY" secondItem="Yr2-I4-ceh" secondAttribute="centerY" id="0LC-gg-XB1"/>
+                    <constraint firstItem="D19-Uf-jfr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3Gq-un-gha"/>
+                    <constraint firstItem="Yr2-I4-ceh" firstAttribute="leading" secondItem="keh-rZ-CDp" secondAttribute="trailing" constant="5" id="5eO-BP-l4H"/>
+                    <constraint firstAttribute="trailing" secondItem="Yr2-I4-ceh" secondAttribute="trailing" constant="16" id="E2p-u8-fgK"/>
+                    <constraint firstItem="keh-rZ-CDp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="D19-Uf-jfr" secondAttribute="trailing" constant="16" id="IdZ-3e-HZP"/>
+                    <constraint firstItem="Yr2-I4-ceh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-1.5" id="J4q-Yt-myf"/>
+                    <constraint firstItem="D19-Uf-jfr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gIL-RL-eVG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amount_label" destination="D19-Uf-jfr" id="X43-On-TaP"/>
+                <outlet property="location_label" destination="keh-rZ-CDp" id="VZt-F6-ejF"/>
+            </connections>
+            <point key="canvasLocation" x="-33.333333333333336" y="61.607142857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
